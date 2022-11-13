@@ -130,8 +130,26 @@ body {
   gap: 50px;
   margin-left: auto;
 }
+
+.contact-box {
+  display: flex;
+  align-items: center;
+}
+.contact-box > .icon {
+  fill: var(--secondary-color);
+}
+/* .mail-box > svg {
+  width: 16px;
+  height: 12px;
+}
+.tel-box > svg {
+  width: 10px;
+  height: 16px;
+} */
 /* contacts-nav links */
 .contacts-nav-link {
+  margin-left: 10px;
+  order: 1;
   color: var(--secondary-color);
 }
 
@@ -140,6 +158,12 @@ body {
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-color);
+}
+/* Пришлось так сделать, потому что при ховере над иконкой
+ не будет отрабатывать интерактив с телефоном и мейлом  */
+.contacts-nav-link:hover + .icon,
+.contacts-nav-link:focus + .icon {
+  fill: var(--accent-color);
 }
 
 /*------ Main studio------ */
