@@ -193,16 +193,39 @@ body {
 }
 
 /* Features */
-.features,
+/* .features,
 .doing {
   background-color: var(--bgcolor-main);
-}
+} */
 .features-box {
   display: flex;
   gap: 30px;
 }
 .feature-item {
   flex-basis: 270px;
+}
+
+.feature-item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--bgcolor-team);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.item1::before {
+  background-image: url(../images/antenna.svg);
+}
+.item2::before {
+  background-image: url(../images/clock.svg);
+}
+.item3::before {
+  background-image: url(../images/diagram.svg);
+}
+.item4::before {
+  background-image: url(../images/astronaut.svg);
 }
 .feature-header {
   margin-bottom: 10px;
