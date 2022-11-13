@@ -154,9 +154,15 @@ body {
 }
 /* poster */
 .poster {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--bgcolor-secondary);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/poster.jpg);
+  background-repeat: no-repeat;
   text-align: center;
 }
 .poster-header {
