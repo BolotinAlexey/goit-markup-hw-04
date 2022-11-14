@@ -307,12 +307,15 @@ body {
   gap: 10px;
   justify-content: space-between;
 }
-.social-box .icon {
-  fill: var(--color-icons);
+.social-icon {
   display: block;
   border-radius: 50%;
 }
-.social-box .icon:hover {
+.social-box .social-icon {
+  fill: var(--color-icons);
+}
+.social-box .social-icon:hover,
+.social-box a:focus > .social-icon {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
 }
@@ -328,7 +331,8 @@ body {
   fill: var(--color-icons);
   border: 1px solid var(--color-icons);
 }
-.clients-item .icon:hover {
+.clients-item a:hover .icon,
+.clients-item a:focus .icon {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -405,6 +409,31 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--bgcolor-secondary);
+}
+.footer-box {
+  display: flex;
+  align-items: baseline;
+}
+.footer-social-box {
+  margin-left: 70px;
+}
+.footer-social-box .text {
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  font-weight: 700;
+}
+.footer-social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+.footer-social-icons .social-icon {
+  fill: var(--primary-white-color);
+  background-color: var(--secondary-color);
+}
+.footer-social-icons a:hover .social-icon,
+.footer-social-icons a:focus .social-icon {
+  background-color: var(--accent-color);
 }
 /* logo */
 .footer-studio {
