@@ -14,7 +14,7 @@
   --bgcolor-team: #f5f4fa;
   --outline-project: #eee;
   --border-header: #ececec;
-  --color-social: #afb1b8;
+  --color-icons: #afb1b8;
 }
 
 /* reset styles */
@@ -218,10 +218,7 @@ body {
 }
 
 /* Features */
-/* .features,
-.doing {
-  background-color: var(--bgcolor-main);
-} */
+
 .features-box {
   display: flex;
   gap: 30px;
@@ -311,13 +308,29 @@ body {
   justify-content: space-between;
 }
 .social-box .icon {
-  fill: var(--color-social);
+  fill: var(--color-icons);
   display: block;
   border-radius: 50%;
 }
 .social-box .icon:hover {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
+}
+
+/* Clients */
+
+.clients-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-item .icon {
+  fill: var(--color-icons);
+  border: 1px solid var(--color-icons);
+}
+.clients-item .icon:hover {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /*------ Main portfolio -------*/
