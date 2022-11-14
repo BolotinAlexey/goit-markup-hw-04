@@ -14,6 +14,7 @@
   --bgcolor-team: #f5f4fa;
   --outline-project: #eee;
   --border-header: #ececec;
+  --color-social: #afb1b8;
 }
 
 /* reset styles */
@@ -299,6 +300,24 @@ body {
 .team-description {
   font-size: 16px;
   color: var(--secondary-color);
+}
+
+.social-box {
+  width: 100%;
+  padding: 16px 32px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+.social-box .icon {
+  fill: var(--color-social);
+  display: block;
+  border-radius: 50%;
+}
+.social-box .icon:hover {
+  background-color: var(--accent-color);
+  fill: var(--primary-white-color);
 }
 
 /*------ Main portfolio -------*/
