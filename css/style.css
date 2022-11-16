@@ -266,6 +266,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 /* Team */
 .team {
   line-height: 1.18;
@@ -303,18 +304,26 @@ body {
   align-items: center;
   gap: 10px;
   justify-content: space-between;
+  color: var(--color-icons);
 }
-.social-icon {
+.social-link {
+  width: 44px;
+  height: 44px;
   display: block;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: inherit;
 }
-.social-box .social-icon {
-  fill: var(--color-icons);
+.social-icon {
+  --color2: currentColor;
 }
-.social-box .social-icon:hover,
-.social-box a:focus > .social-icon {
+
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
-  fill: var(--primary-white-color);
+  color: var(--primary-white-color);
 }
 
 /* Clients */
@@ -325,14 +334,21 @@ body {
 }
 
 .clients-item .icon {
-  border-radius: 4px;
-  fill: var(--color-icons);
-  border: 1px solid var(--color-icons);
+  --color2: currentColor;
 }
-
-.clients-item a:hover .icon,
-.clients-item a:focus .icon {
-  fill: var(--accent-color);
+.client-link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid var(--color-icons);
+  color: var(--color-icons);
+}
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-color);
   border-color: var(--accent-color);
 }
 
@@ -416,10 +432,10 @@ body {
 }
 .footer-social-box {
   margin-left: 70px;
+  color: var(--primary-white-color);
 }
 .footer-social-box .text {
   text-transform: uppercase;
-  color: var(--primary-white-color);
   font-weight: 700;
 }
 .footer-social-icons {
@@ -427,14 +443,18 @@ body {
   display: flex;
   gap: 10px;
 }
-.footer-social-icons .social-icon {
-  fill: var(--primary-white-color);
+
+.footer-social-icons .social-link {
   background-color: var(--color-social-header);
 }
-.footer-social-icons a:hover .social-icon,
-.footer-social-icons a:focus .social-icon {
+.footer-social-icons .social-link:hover,
+.footer-social-icons .social-link:focus {
   background-color: var(--accent-color);
 }
+/* .footer-social-icons a:hover .social-icon,
+.footer-social-icons a:focus .social-icon {
+  background-color: var(--accent-color);
+} */
 /* logo */
 .footer-studio {
   color: var(--primary-white-color);
